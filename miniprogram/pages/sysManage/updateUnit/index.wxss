@@ -1,0 +1,30 @@
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+}
+.container2 text{
+  margin-top: 5vh;
+}
+.container2 switch{
+  margin-top: 4vh;
+}
+.container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+.container3 button{
+  color: white;
+  background:#1E90FF;
+}

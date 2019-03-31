@@ -1,0 +1,58 @@
+/* miniprogram/pages/user/perfectUser/index.wxss */
+.text1{
+  color: red;
+  font-size: 30rpx;
+  width: 100vw;
+  height: 15vh;
+  padding-left: 20vw;
+  margin-top: 5vh;
+}
+/* miniprogram/pages/registered/index.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+}
+.userInput{
+  margin-top: 10vh;
+  margin-left: 10rpx;
+}
+.userInput2{
+  margin-top: 5vh;
+  margin-left: 10rpx;
+}
+.input{
+  
+  height: 5vhrpx;
+  width: 380rpx;
+  text-align: center;
+  color: #333333;
+}
+.line{
+  height: 1px;
+  width:90vw;
+  background: #999999;
+  margin-top: 2vh;
+  margin-left: 10rpx
+}
+.btn{
+  color: white;
+  background:#1E90FF;
+  font-size: 40rpx;
+  width: 550rpx;
+  margin-top: 5vh;
+  margin-left: 100rpx;
+}
+.btn2{
+  font-size: 30rpx;
+  width: 210rpx;
+  margin-top: 2vh;
+}
+.picker{
+  margin-left: 10vw;
+  margin-top: 5vh;
+}
+.radio-group{
+  margin-left: 10vw;
+  margin-top: 5vh;
+}

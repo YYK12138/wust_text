@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<image class='navPic' src='https://img.zcool.cn/community/0153a658c2a799a801219c773bfcaa.jpg@2o.jpg'></image>
+<view class='container'>
+  <image bindtap='bindView1' src='/images/1.jpg'></image>
+  <image src='/images/2.jpg'></image>
+</view>
+
+<view class='container'>
+  <image src='/images/3.jpg'></image>
+  <image src='/images/4.jpg'></image>
+</view>

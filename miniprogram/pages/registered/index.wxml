@@ -1,0 +1,30 @@
+<!--miniprogram/pages/registered/index.wxml-->
+<form bindsubmit='onRegistered'>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput'>账号</text>
+  <input class='input userInput' name='college' placeholder='请输入账号'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>手机</text>
+  <input class='input userInput2' name='phone'  password='true' placeholder='请输入手机号'></input>
+  <button class='btn2' bindtap='onGetCode'>获取验证码</button>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>验证码</text>
+  <input class='input userInput2' name='code' placeholder='请输入验证码'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>密码</text>
+  <input class='input userInput2' name='psd'  password='true' placeholder='请输入密码'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>确认密码</text>
+  <input class='input userInput2' name='psd2'  password='true' placeholder='请确认密码'></input>
+  </view>
+  <view class='line'></view>
+  <button class='btn' form-type='submit'>注册</button>
+</form>

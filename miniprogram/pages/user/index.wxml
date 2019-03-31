@@ -1,0 +1,14 @@
+<!--pages/user/index.wxml-->
+<view class='container' style="background:url(https://img.zcool.cn/community/0153a658c2a799a801219c773bfcaa.jpg@2o.jpg);background-size: contain">
+  <image src='/images/person.png'></image>
+  <view>
+    <text bindtap='{{bind1}}'>{{load1}}</text>
+  </view>
+</view>
+<view class='container2'>
+  <button bindtap='perfectUser'>完善个人信息</button>
+  <button>我的权限</button>
+  <button bindtap='feedBack'>留言反馈</button>
+</view>
+
+<button class='btn' bindtap='{{bind2}}'>退出登录</button>

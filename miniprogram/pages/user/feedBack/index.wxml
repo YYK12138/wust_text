@@ -1,0 +1,5 @@
+<!--miniprogram/pages/user/feedBack/index.wxml-->
+<form bindtap=''>
+<textarea class='text' placeholder='您可以在此提交意见，意见会通过邮箱反馈给管理员，感谢您的反馈！'></textarea> 
+<button class='btn' form-type='submit'>提交</button>
+</form>

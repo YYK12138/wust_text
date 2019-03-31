@@ -1,0 +1,23 @@
+<image class='navPic' src='https://img.zcool.cn/community/0153a658c2a799a801219c773bfcaa.jpg@2o.jpg'></image>
+<view class='container'>
+  <text>测试单位</text>
+  <text>开启/暂停</text>
+</view>
+<view class='container'>
+  <view class='container2'>
+    <text>单位1</text>
+    <text>单位2</text>
+    <text>单位3</text>
+  </view>
+  <view class='container2'>
+    <switch checked='true'></switch>
+    <switch checked='true'></switch>
+    <switch checked='true'></switch>
+  </view>
+</view>
+<view class='container3'>
+  <button bindtap='bindView1'>添加测试单位</button>
+  <button bindtap='bindView2'>修改测试单位</button>
+</view>
+
+

@@ -1,0 +1,8 @@
+<!--miniprogram/pages/sysManage/updateUnit/update/index.wxml-->
+<view class='headText'><text>请选择要修改的测试单位</text></view>
+<view class='container2' bindtap='bindView1'><text>测试单位1</text><button>修改</button></view>
+<view class='container2'  bindtap='bindView1'><text>测试单位2</text><button>修改</button></view>
+<view class='container2'  bindtap='bindView1'><text>测试单位3</text><button>修改</button></view>
+<button class='boombtn' bindtap='bindView2'>取消修改</button>
+
+

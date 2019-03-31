@@ -1,0 +1,22 @@
+<!--pages/login/index.wxml-->
+<form bindsubmit='onLogin'>
+  <view class='container'>
+  <text style='margin-left:150rpx' class='userInput'>账号</text>
+  <input class='input userInput' name='username' placeholder='请输入手机号'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:150rpx' class='userInput2'>密码</text>
+  <input class='input userInput2' name='psd'  password='true' placeholder='请输入密码'></input>
+  </view>
+  <view class='line'></view>
+  <button class='btn' form-type='submit'>登录</button>
+</form>
+<view class='container2'>
+  <text bindtap='resetPass'>忘记密码？</text>
+  <text class='addUser' bindtap='addUser'>新用户注册</text>
+</view>
+<view class='container3'>
+  <text>登录即代表遵守</text>
+  <text class='remind'>实验室使用规范</text>
+</view>

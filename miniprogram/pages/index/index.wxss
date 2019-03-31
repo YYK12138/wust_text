@@ -1,0 +1,15 @@
+/* pages/index/index.wxss */
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+  justify-content: space-around;
+}
+.container image{
+  width: 230rpx;
+  height: 230rpx;
+}

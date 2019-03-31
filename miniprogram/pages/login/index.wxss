@@ -1,0 +1,59 @@
+/* pages/login/index.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  font-size: 40rpx;
+}
+.userInput{
+  margin-top: 15vh;
+  margin-left: 30rpx;
+}
+.userInput2{
+  margin-top: 5vh;
+  margin-left: 30rpx;
+}
+.input{
+  
+  height: 5vhrpx;
+  width: 350rpx;
+  text-align: center;
+  color: #333333;
+}
+.line{
+  height: 1px;
+  width:550rpx;
+  background: #999999;
+  margin-top: 2vh;
+  margin-left: 100rpx
+}
+.btn{
+  color: white;
+  background:#1E90FF;
+  font-size: 40rpx;
+  width: 550rpx;
+  margin-top: 5vh;
+  margin-left: 100rpx;
+}
+.container2{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  color: #1E90FF;
+  margin-top: 3vh;
+  margin-left: 100rpx;
+}
+.addUser{
+  margin-left: 250rpx;
+}
+.container3{
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+  justify-content: center;
+  color: #999999;
+  margin-top: 40vh;
+}
+.remind{
+  color: #1E90FF;
+  
+}

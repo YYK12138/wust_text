@@ -1,0 +1,16 @@
+/* miniprogram/pages/user/feedBack/index.wxss */
+.text{
+  width: 80vw;
+  height: 40vh;
+  border: 1px solid #666666;
+  margin-left: 10vw;
+  margin-top: 10vh;
+}
+.btn{
+  color: white;
+  background:#1E90FF;
+  font-size: 40rpx;
+  width: 550rpx;
+  margin-top: 5vh;
+  margin-left: 100rpx;
+}

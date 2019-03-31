@@ -1,0 +1,31 @@
+/* miniprogram/pages/sysManage/updateUnit/add/index.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+.container2 text{
+  margin-top: 4.5vh;
+  margin-left: 3vw;
+}
+.container2 input{
+  border:1px solid #666666;
+  margin-top: 4vh;
+  width: 45vw;
+}
+.container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+.container3 button{
+  color: white;
+  background:#1E90FF;
+  width: 30vw;
+}

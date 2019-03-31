@@ -1,0 +1,47 @@
+<!--miniprogram/pages/user/perfectUser/index.wxml-->
+<text class='text1'>请填写真实信息确保能够通过审核</text>
+<form bindsubmit='authentication'>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput'>学号/工号:</text>
+  <input class='input userInput' name='college' placeholder='请输入您的学号/工号'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>姓名:</text>
+  <input class='input userInput2' name='phone'  password='true' placeholder='请输入您的姓名'></input>
+  
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>学院专业:</text>
+  <picker
+    mode="multiSelector"
+    bindchange="bindMultiPickerChange"
+    bindcolumnchange="bindMultiPickerColumnChange"
+    value="{{multiIndex}}"
+    range="{{multiArray}}"
+  >
+    <view class="picker">
+      {{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>手机:</text>
+  <input class='input userInput2' name='psd'  password='true' placeholder='请输入联系人电话'></input>
+  </view>
+  <view class='line'></view>
+  <view class='container'>
+  <text style='margin-left:50rpx' class='userInput2'>身份:</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />
+    {{item.value}}
+  </label>
+</radio-group>
+  </view>
+  <view class='line'></view>
+  <button class='btn' form-type='submit'>提交</button>
+</form>
+
