@@ -3,12 +3,12 @@
 <form bindsubmit='authentication'>
   <view class='container'>
   <text style='margin-left:50rpx' class='userInput'>学号/工号:</text>
-  <input class='input userInput' name='college' placeholder='请输入您的学号/工号'></input>
+  <input class='input userInput' name='num' placeholder='请输入您的学号/工号'></input>
   </view>
   <view class='line'></view>
   <view class='container'>
   <text style='margin-left:50rpx' class='userInput2'>姓名:</text>
-  <input class='input userInput2' name='phone'  password='true' placeholder='请输入您的姓名'></input>
+  <input class='input userInput2' name='name'  password='true' placeholder='请输入您的姓名'></input>
   
   </view>
   <view class='line'></view>
@@ -29,7 +29,7 @@
   <view class='line'></view>
   <view class='container'>
   <text style='margin-left:50rpx' class='userInput2'>手机:</text>
-  <input class='input userInput2' name='psd'  password='true' placeholder='请输入联系人电话'></input>
+  <input class='input userInput2' name='phone'  password='true' placeholder='请输入联系人电话'></input>
   </view>
   <view class='line'></view>
   <view class='container'>

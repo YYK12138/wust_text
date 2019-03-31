@@ -62,5 +62,16 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  feedCommit:function(e){
+    if (e.detail.value.feed.length!=0){
+      wx.showToast({
+        title: '提交成功！',
+        duration:2000
+      })
+      wx.reLaunch({
+        url: '/pages/user/index',
+      })
+    }
   }
 })

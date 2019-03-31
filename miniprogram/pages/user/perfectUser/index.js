@@ -110,13 +110,21 @@ Page({
 
   },
   authentication:function(e){
-    wx.showToast({
-      title: '您的申请已提交管理员审核！',
-      duration:2000
-    })
-    wx.reLaunch({
-      url: '/pages/user/index',
-    })
+    if (e.detail.value.num.length == 0 || e.detail.value.name.length == 0 || e.detail.value.phone.length == 0){
+      wx.showModal({
+        title: '提示',
+        content: '以上内容不能为空！',
+      })
+    }else{
+      wx.showToast({
+        title: '您的申请已提交管理员审核！',
+        duration: 2000
+      })
+      wx.reLaunch({
+        url: '/pages/user/index',
+      })
+    }
+    
   }
 
 })
