@@ -1,5 +1,5 @@
 <!--pages/user/index.wxml-->
-<view class='container' style="background:url(https://img.zcool.cn/community/0153a658c2a799a801219c773bfcaa.jpg@2o.jpg);background-size: contain">
+<view class='container' style="background:url(http://www.285868.com/uploadfile/2016/1110/20161110015145880.jpg);background-size: 100vw 30vh">
   <image src='/images/person.png'></image>
   <view>
     <text bindtap='{{bind1}}'>{{load1}}</text>

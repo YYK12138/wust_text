@@ -1,15 +1,54 @@
 /* pages/index/index.wxss */
-.navPic{
-  width: 100vw;
-  height: 20vh;
-}
+
 .container{
   display: flex;
   flex-direction: row;
-  margin-top: 10vh;
   justify-content: space-around;
 }
 .container image{
-  width: 230rpx;
+  width: 33.3vw;
   height: 230rpx;
+}
+.img{
+  width: 100vw;
+  height: 30vh;
+}
+.txt{
+  width: 33.3vw;
+  height: 150rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 80rpx;
+}
+.announ{
+  width: 100vw;
+  height: 40vh;
+  margin-top: 5vh;
+  background: #f0f0f0;
+}
+.announcement{
+  width: 90vw;
+  height: 40vh;  
+  margin-left: 5vw;
+}
+.text1{
+  font-size: 30rpx;
+  text-align: center;
+  color: #000000;
+  padding-left: 35vw;
+}
+.announcement_item{
+  display: flex;
+  margin-top: 2vh;
+  color: #000000;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+.btn{
+  width: 18vw;
+  height: 4vh;
+  font-size: 20rpx;
+  margin-left: 70vw;
+  margin-top: 2vh;
 }

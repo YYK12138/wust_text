@@ -1,11 +1,28 @@
 <!--pages/index/index.wxml-->
-<image class='navPic' src='https://img.zcool.cn/community/0153a658c2a799a801219c773bfcaa.jpg@2o.jpg'></image>
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class='img'/>
+    </swiper-item>
+  </block>
+</swiper>
 <view class='container'>
-  <image bindtap='bindView1' src='/images/1.jpg'></image>
-  <image src='/images/2.jpg'></image>
+   <view bindtap='bindView1' style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114129378.jpg);background-size: 400rpx ;"class='txt'>设备管理</view>
+  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114102983.jpg);background-size: 400rpx ;"class='txt'>中心管理</view>
+  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114124239.jpg);background-size: 400rpx" class='txt'>系统管理</view>
 </view>
+<view class='announ'><view class='announcement'>
+<text class='text1'>最新公告</text>
+<view class='announcement_item'><text>【{{title[0]}}】</text><text>{{date[0]}}</text></view>
+<view class='announcement_item'><text>【{{title[1]}}】</text><text>{{date[1]}}</text></view>
+<view class='announcement_item'><text>【{{title[2]}}】</text><text>{{date[2]}}</text></view>
+<view class='announcement_item'><text>【{{title[3]}}】</text><text>{{date[3]}}</text></view>
+<view class='announcement_item'><text>【{{title[4]}}】</text><text>{{date[4]}}</text></view>
+<button class='btn'>MORE>></button>
+</view></view>
 
-<view class='container'>
-  <image src='/images/3.jpg'></image>
-  <image src='/images/4.jpg'></image>
-</view>
