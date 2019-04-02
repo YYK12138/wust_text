@@ -1,0 +1,8 @@
+<!--miniprogram/pages/overview/index.wxml-->
+<image class='img' src='/images/overviewTab.jpg'></image>
+<view class='container2'><text>{{name1}}</text><text>{{open1}}</text></view>
+<view class='container3'><text>容量:{{num1}}</text><text space='ensp'>     剩余:{{margin1}}</text></view>
+<view class='container2'><text>{{name2}}</text><text>{{open2}}</text></view>
+<view class='container3'><text>容量:{{num2}}</text><text space='ensp'>     剩余:{{margin2}}</text></view>
+<view class='container2'><text>{{name3}}</text><text>{{open3}}</text></view>
+<view class='container3'><text>容量:{{num3}}</text><text space='ensp'>     剩余:{{margin3}}</text></view>

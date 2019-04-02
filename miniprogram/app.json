@@ -9,7 +9,8 @@
     "pages/user/index",
     "pages/registered/index",
     "pages/user/perfectUser/index",
-    "pages/user/feedBack/index"
+    "pages/user/feedBack/index",
+    "pages/overview/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -27,6 +28,12 @@
         "pagePath": "pages/index/index",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "text": "概况",
+        "pagePath": "pages/overview/index",
+        "iconPath": "images/overview.png",
+        "selectedIconPath": "images/overview-selected.png"
       },
       {
         "text": "我的",
