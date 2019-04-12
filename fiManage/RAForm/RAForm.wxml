@@ -1,0 +1,28 @@
+<!-- miniprogram/pages/fiManage/RAForm/RAForm.wxml-->
+<image class='top' src='/images/RAForm.jpg'>
+</image>
+<view class='group'>
+  <image class='user' src='/images/person.png'></image>
+  <view class='groupname'>{{groupname[0]}}</view>
+  <view class='style1'>充值金额: {{money[0]}}</view>
+  <view class="style1">申请时间：{{time[0]}}</view>
+  <view class="style2">充值状态：
+    <view wx:if="{{state0 == '未充值'}}" class='style3'>未充值
+      <button class="button" bindtap='bindtap1'>充值</button>
+    </view>
+    <view wx:else="{{state0 == '已充值'}}" class='style4'>已充值</view>
+  </view>
+</view>
+
+<view class='group'>
+  <image class='user' src='/images/person.png'></image>
+  <view class='groupname'>{{groupname[1]}}</view>
+  <view class='style1'>充值金额: {{money[1]}}</view>
+  <view class="style1">申请时间：{{time[1]}}</view>
+  <view class="style2">充值状态：
+    <view wx:if="{{state1 == '未充值'}}" class='style3'>未充值
+      <button class="button" bindtap='bindtap1'>充值</button>
+    </view>
+    <view wx:else="{{state1 == '已充值'}}" class='style4'>已充值</view>
+  </view>
+</view>
