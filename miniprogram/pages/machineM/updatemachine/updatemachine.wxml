@@ -1,0 +1,34 @@
+<view class='headText'><text>请选择要修改的设备</text></view>
+
+<scroll-view style='height:80%'>
+  <view class='firstview'>
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+
+    <view class='secview'><text>设备1</text><button bindtap='bindView1'>修改</button></view>
+  </view>
+</scroll-view>
+<button class='boombtn' bindtap='bindView2'>取消修改</button>

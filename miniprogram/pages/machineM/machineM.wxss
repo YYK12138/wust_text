@@ -1,0 +1,45 @@
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
+.firstview{
+  display:flex;
+  flex-wrap: wrap;
+}
+.secview{
+  display:flex;
+  flex-direction:row;
+  height: 200rpx;
+  flex: 0 0 50%;
+}
+
+
+.container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20vh;
+  position:fixed;
+  bottom:0; 
+  width: 100%; 
+}
+
+.btn1 {
+  color: white;
+  background:#1E90FF;
+  width: 100%;
+  border-radius: 0px;
+}
+
+.btn2 {
+  color: white;
+  background:#1E90FF;
+  width: 100%;  
+  border-radius: 0px;
+}
+
+.secview text{
+  margin-left: 5vh;
+}
+
+

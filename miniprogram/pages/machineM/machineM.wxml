@@ -1,0 +1,45 @@
+<view>
+
+
+<text>开启/暂停 设备</text>
+
+
+<scroll-view style='height:80%'>
+  <view class='firstview'>
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+
+    <view class='secview'><text>设备1</text><switch checked='true'></switch></view>
+  </view>
+</scroll-view>
+
+
+<view class='container3'>
+  <view style='flex-grow:1'><button bindtap='bindView1' class="btn1">添加设备</button></view>
+  <view style='flex-grow:1'><button bindtap='bindView2' class="btn2">修改设备参数</button></view>
+</view>
+
+</view>
