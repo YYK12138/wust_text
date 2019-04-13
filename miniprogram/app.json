@@ -11,7 +11,7 @@
     "pages/user/perfectUser/index",
     "pages/user/feedBack/index",
     "pages/overview/index",
-    "pages/machineM/machineM", /* 设备管理模块主界面 */
+    "pages/machineM/machineM", 
     "pages/machineM/addmachine/addmachine",
     "pages/machineM/updatemachine/updatemachine",
     "pages/machineM/updatemachine/update/update"

@@ -12,9 +12,9 @@
   </block>
 </swiper>
 <view class='container'>
-   <view bindtap='bindView1' style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114129378.jpg);background-size: 400rpx ;"class='txt'>设备管理</view>
-  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114102983.jpg);background-size: 400rpx ;"class='txt'>中心管理</view>
-  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114124239.jpg);background-size: 400rpx" class='txt'>系统管理</view>
+   <view bindtap='bindView1' style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114129378.jpg);background-size: 400rpx ;"class='txt'>系统管理</view>
+  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114102983.jpg);background-size: 400rpx ;"class='txt'>预约管理</view>
+  <view style="background:url(http://www.285868.com/uploadfile/2017/0213/20170213114124239.jpg);background-size: 400rpx" class='txt'>财务管理</view>
 </view>
 <view class='announ'><view class='announcement'>
 <text class='text1'>最新公告</text>
@@ -23,6 +23,6 @@
 <view class='announcement_item'><text>【{{title[2]}}】</text><text>{{date[2]}}</text></view>
 <view class='announcement_item'><text>【{{title[3]}}】</text><text>{{date[3]}}</text></view>
 <view class='announcement_item'><text>【{{title[4]}}】</text><text>{{date[4]}}</text></view>
-<button class='btn'>MORE>></button>
+
 </view></view>
 
