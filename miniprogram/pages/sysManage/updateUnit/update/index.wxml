@@ -1,8 +1,8 @@
 <!--miniprogram/pages/sysManage/updateUnit/update/index.wxml-->
 <view class='headText'><text>请选择要修改的测试单位</text></view>
-<view class='container2' bindtap='bindView1'><text>测试单位1</text><button>修改</button></view>
-<view class='container2'  bindtap='bindView1'><text>测试单位2</text><button>修改</button></view>
-<view class='container2'  bindtap='bindView1'><text>测试单位3</text><button>修改</button></view>
+<view class='container2'><text>{{unit1}}</text><button  bindtap='bindView1' data-id='1'>修改</button></view>
+<view class='container2'><text>{{unit2}}</text><button  bindtap='bindView1' data-id='2'>修改</button></view>
+<view class='container2'><text>{{unit3}}</text><button  bindtap='bindView1' data-id='3'>修改</button></view>
 <button class='boombtn' bindtap='bindView2'>取消修改</button>
 
 

@@ -1,28 +1,23 @@
 <!--miniprogram/pages/sysManage/updateUnit/add/index.wxml-->
+<form bindsubmit='updateUnit'>
 <view class='container'>
   <view class='container2'>
     <text>单位名称：</text>
     <text>负责人姓名：</text>
     <text>一卡通卡号：</text>
-    <text>手机号：</text>
-    <text>办公地点：</text>
-    <text>邮箱：</text>
-    <text>负责人账号：</text>
-    <text>负责人密码：</text>
+    <text>负责人手机号：</text>
+    <text>实验室位置：</text>
   </view>
   <view class='container2'>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
+    <input name='tname'></input>
+    <input name='aname'></input>
+    <input name='aid'></input>
+    <input name='aphone'></input>
+    <input name='position'></input>
   </view>
 </view>
 <view class='container3'>
   <button>删除</button>
-  <button>确定</button>
+  <button form-type='submit'>确定</button>
 </view>
-
+</form>
