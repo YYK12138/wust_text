@@ -1,0 +1,4 @@
+<form bindsubmit='feedCommit'>
+<textarea class='text' name='feed' placeholder='请说明拒绝原因！'></textarea> 
+<button class='btn' form-type='submit'>提交</button>
+</form>

@@ -1,0 +1,43 @@
+/* pages/reserveMgt/index.wxss */
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  box-sizing: border-box;
+} 
+.container2{
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  background: #f0f0f0;
+  justify-content: space-around;
+  flex-direction:row;
+  color: #333333;
+  font-size: 30rpx;
+  margin-top: 1vh;
+  padding-top: 1vh;
+}
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  
+}
+.container2 text{
+  margin-top: 2vh;
+  margin-left: 8vw;
+}
+.container2 button{
+  width: 20vw;
+  height: 5vh;
+  font-size: 30rpx;
+  margin-top: 8vh;
+  border: 1px solid #666666;
+}
+.boombtn{
+  color: white;
+  background:#1E90FF;
+  width: 1vw;
+  margin-top: 1vh;
+}

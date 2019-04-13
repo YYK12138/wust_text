@@ -1,0 +1,11 @@
+<!--pages/reserveMgt/index.wxml-->
+<view class='head'>预约信息管理</view>
+<view class='container2' ><text>{{name1}}</text><text>申请人:{{user1}}</text><button bindtap='bindView1' id='id1'>批准</button><button bindtap='bindView3' id='id3'>拒绝</button></view>
+
+<view class='container2'><text>{{name2}}</text><text>申请人:{{user2}}</text><button bindtap='bindView1'>批准</button><button bindtap='bindView3'>拒绝</button></view>
+
+<view class='container2'><text>{{name3}}</text><text>申请人:{{user3}}</text><button bindtap='bindView1'>批准</button><button bindtap='bindView3'>拒绝</button></view>
+
+<view class='container2'><text>{{name4}}</text><text>申请人:{{user4}}</text><button bindtap='bindView1'>批准</button><button bindtap='bindView3'>拒绝</button></view>
+
+<view class='container2' ><text>{{name5}}</text><text>申请人:{{user5}}</text><button bindtap='bindView1'>批准</button><button bindtap='bindView3'>拒绝</button></view>
