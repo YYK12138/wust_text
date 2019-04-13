@@ -1,0 +1,14 @@
+<!--miniprogram/pages/overview/test1.wxml-->
+
+<view class='container2'>
+ <view class='container3'>
+  <text font-align="left"> 详情:{{detail}}</text>
+ </view>
+ <view class='container3'>
+  <text> 设备损耗情况:{{loss}}</text>
+ </view>
+ <view class='container3'>
+  <text>实验类型:{{ttype}}</text>
+  </view>
+</view>
+

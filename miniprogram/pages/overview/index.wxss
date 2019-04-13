@@ -5,6 +5,19 @@
   height: 25vh;
 }
 
+container1{
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  background: #f0f0f0;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #333333;
+  font-size: 25rpx;
+  margin-top: 5vh;
+  padding-top: 0vh;
+
+}
 .container2{
   display: flex;
   width: 100vw;
@@ -13,16 +26,33 @@
   justify-content: space-around;
   flex-direction: row;
   color: #333333;
-  font-size: 30rpx;
-  margin-top: 10vh;
-  padding-top: 1vh;
+  font-size: 25rpx;
+  margin-top: 5vh;
+  padding-top: 0vh;
+
 }
 .container3{
   width: 100vw;
   display: flex;
   justify-content: space-around;
   background: #f0f0f0;
-  height: 4vh;
+  height: 5vh;
   font-size: 25rpx;
   color: #666666;
+  padding-top: 3vh;
 }
+
+.button1 {
+  line-height: 6vh;
+  border-color:  #f0f0f0;
+  background: #f0f0f0;
+  color: #333333;
+  font-size: 35rpx;
+  width: 100vw;
+  height: 6vh;
+ 
+}
+
+
+
+

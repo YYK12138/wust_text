@@ -17,7 +17,22 @@ Page({
     margin1:"30",
     margin2: "12",
     margin3: "14",
+   
+    imgUrls:[
+      'https://ps.ssl.qhmsg.com/sdr/400__/t01eaea410fd7b9a975.jpg',
+      'http://file2.youboy.com/e/2015/2/5/69/280676.png',
+      'http://img3.makepolo.net/img3/127/748/100017112748_14575983559811.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 3000,
+    duration: 1000,
+    test1: "",
+    test2: "",
+    test3: ""
+     
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
@@ -73,5 +88,23 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  test1: function () {
+    wx.navigateTo({
+      url: ' ges/overview/test1',
+    })
+  },
+
+  test2:function () {
+      wx.navigateTo({
+        url: '/pages/overview/test2',
+      })
+  },
+
+  test3: function () {
+        wx.navigateTo({
+          url: '/pages/overview/test3',
+        })
   }
 })
