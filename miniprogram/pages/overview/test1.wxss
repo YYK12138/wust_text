@@ -1,7 +1,30 @@
+.table{
+  background: #f8f0f0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 30rpx;
+  padding-top: 10vh;
+}
+.tr{
+  display: flex;
+}
+.th{
+  font-size: 40rpx;
+  width: 100vw;
+  text-align: center;
+}
+.td{
+  color: #333333;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 2vh
+}
+.td text{
+  color: red;
+}
 .container3{
   width: 100vw;
   display: flex;
-
   background: #f8f0f0;
   height: 15vh;
   font-size: 30rpx;

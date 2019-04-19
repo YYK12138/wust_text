@@ -1,0 +1,4 @@
+<!--miniprogram/pages/dataStatis/index.wxml-->
+<view wx:for='{{list}}'>
+  <text>123</text>
+</view>

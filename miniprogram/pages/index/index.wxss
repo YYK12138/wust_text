@@ -31,11 +31,12 @@
   width: 90vw;
   height: 40vh;  
   margin-left: 5vw;
+  padding-top: 2vh;
 }
 .text1{
   font-size: 30rpx;
   text-align: center;
-  color: #000000;
+  /* color: #000000;; */
   padding-left: 35vw;
 }
 .announcement_item{

@@ -1,14 +1,13 @@
 <!--miniprogram/pages/overview/test1.wxml-->
-
-<view class='container2'>
- <view class='container3'>
-  <text font-align="left"> 详情:{{detail}}</text>
- </view>
- <view class='container3'>
-  <text> 设备损耗情况:{{loss}}</text>
- </view>
- <view class='container3'>
-  <text>实验类型:{{ttype}}</text>
+<view class='table'>
+  <view class='tr'>
+    <view class='th'>{{title[id]}}</view>
+  </view>
+  <view class='tr'>
+    <view class='td'>本实验中心拥有设备<text>{{state[id]}}</text>台，剩余<text>{{state2[id]}}</text>台</view>
+  </view>
+    <view class='tr'>
+    <view class='td'>{{text[id]}}</view>
   </view>
 </view>
 

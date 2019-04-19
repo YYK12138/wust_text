@@ -1,3 +1,4 @@
+var app=getApp()
 Page({
 
   /**
@@ -14,14 +15,16 @@ Page({
     interval: 3000,
     duration: 1000,
     title:["实验室设备使用规范","实验室物品赔偿方案","实验室使用费用计算方法","实验室主要负责热联系方式","实验室预约系统小程序上线"],
-    date: ["2019/3/31","2019/3/27","2019/3/14","2019/2/24","2019/2/1"]
+    date: ["2019/3/31","2019/3/27","2019/3/14","2019/2/24","2019/2/1"],
+    text:["使用规范","赔偿方案","计费方式","联系方式","小程序上线"],
+    list:["0","1","2","3","4"]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+ 
   },
 
   /**
@@ -74,8 +77,49 @@ Page({
   },
 
   bindView1:function(){
-    wx.navigateTo({
-      url: '/pages/sysManage/updateUnit/index',
+    if(app.load=="登录/注册"){
+      wx.showToast({
+        title: '请先登录账户！',
+        icon:'none'
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/sysManage/updateUnit/index',
+      })
+    } 
+  },
+  
+  bindView2:function(){
+    if (app.load == "登录/注册") {
+      wx.showToast({
+        title: '请先登录账户！',
+        icon: 'none'
+      })
+    } else{
+       wx.navigateTo({
+        url: '/pages/reserveMgt/index',
+      })
+    }
+  },
+
+  bindView3:function(){
+    if (app.load == "登录/注册") {
+      wx.showToast({
+        title: '请先登录账户！',
+        icon: 'none'
+      })
+    } else{
+      wx.navigateTo({
+        url: '/pages/fiManage/RAForm/RAForm',
+      })
+    }
+  },
+
+  getText:function(e){
+
+    wx.showModal({
+      title: this.data.title[e.currentTarget.dataset.id],
+      content: this.data.text[e.currentTarget.dataset.id],
     })
   }
 

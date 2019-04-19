@@ -5,19 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name1:"测试中心1",
-    name2: "测试中心2",
-    name3: "测试中心3",
-    open1:"已开放",
-    open2: "已开放",
-    open3: "已开放",
-    num1:"40",
-    num2: "30",
-    num3: "50",
-    margin1:"30",
-    margin2: "12",
-    margin3: "14",
-   
+    list:["0","1","2"],
+    name: ["测试中心1", "测试中心2", "测试中心3"],
+    open: ["已开放", "已开放", "已开放"],
+    num:["40","30","50"],
+    margin:["30","12","14"],
     imgUrls:[
       'https://ps.ssl.qhmsg.com/sdr/400__/t01eaea410fd7b9a975.jpg',
       'http://file2.youboy.com/e/2015/2/5/69/280676.png',
@@ -90,21 +82,10 @@ Page({
 
   },
 
-  test1: function () {
+  test1: function (e) {
     wx.navigateTo({
-      url: ' ges/overview/test1',
+      url: '/pages/overview/test1?id='+ e.currentTarget.dataset.id,
     })
   },
 
-  test2:function () {
-      wx.navigateTo({
-        url: '/pages/overview/test2',
-      })
-  },
-
-  test3: function () {
-        wx.navigateTo({
-          url: '/pages/overview/test3',
-        })
-  }
 })

@@ -1,5 +1,6 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/sysManage/updateUnit/update/selectUpdate/index",
     "pages/sysManage/updateUnit/update/index",
@@ -11,10 +12,14 @@
     "pages/user/perfectUser/index",
     "pages/user/feedBack/index",
     "pages/overview/index",
-    "pages/machineM/machineM", 
+    "pages/machineM/machineM",
     "pages/machineM/addmachine/addmachine",
     "pages/machineM/updatemachine/updatemachine",
-    "pages/machineM/updatemachine/update/update"
+    "pages/machineM/updatemachine/update/update",
+    "pages/fiManage/RAForm/RAForm",
+    "pages/reserveMgt/index",
+    "pages/dataStatis/index",
+    "pages/overview/test1"
   ],
   "window": {
     "navigationBarTextStyle": "black",

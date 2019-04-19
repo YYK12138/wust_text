@@ -6,28 +6,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-    //re_list:[]
-    name1: "张三实验1",//应该是从数据库调出名字，测试未成功！
-    name2: "张三实验2",
-    name3: "张三实验3",
-    name4: "张三实验1",
-    name5: "张三实验2",
-    name6: "张三实验3",
-    user1: "张三1",
-    user2: "张三2",
-    user3: "张三3",
-    user4: "张三4",
-    user5: "张三5",
-    user6: "张三6",
+    list:[],
+    name:["张三实验1", "张三实验2", "张三实验3", "张三实验4", "张三实验5"],
+    user: ["张三1", "张三2", "张三3", "张三4", "张三5"],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var i 
+    var list1=[]
+
     //创建一个变量来保存页面page示例中的this，方便后续使用
-    var _this=this;
-    
+    var _this=this
+    //生成动态数组
+    for (i = 0; i < 5; i++) {
+      list1.push(i)
+    }
+    this.setData({
+      list:list1
+    })
+    //删除数组指定元素
+    //console.log(list1)
+    //list1.splice(1,1)
+   // console.log(list1)
+
     //添加数据
     /*recont.add({
       data:{
@@ -100,19 +104,31 @@ Page({
   onShareAppMessage: function () {
 
   },
-  bindView1: function () {
-    
-    wx.navigateTo({
-      url: '/pages/reserveMgt/index',
-    })
-  },
 
-  bindView2: function () {
-    wx.navigateBack({
-      delta: 1
+  bindView2: function (e) {
+    var that =this
+    var list1=this.data.list
+    var name1=this.data.name
+    var user1=this.data.user
+    wx.showModal({
+      title: '预约申请',
+      content: '是否批准?',
+       success(res) {
+        if (res.confirm) {
+          list1.pop()//删除list1尾部元素
+          name1.splice(e.currentTarget.dataset.id, 1)//删除从id起的1个元素
+          user1.splice(e.currentTarget.dataset.id, 1)
+          that.setData({
+            list:list1,
+            name: name1,
+            user: user1
+          })
+        }
+      }
     })
   },
-  bindView3: function () {
+  bindView3: function (e) {
+    console.log(e.currentTarget.dataset.id)
     wx.navigateTo({
       url: '/pages/reserveMgt/refuse/index',
     })

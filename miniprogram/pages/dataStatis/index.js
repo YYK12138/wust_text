@@ -1,13 +1,11 @@
-// miniprogram/pages/overview/test2.js
+// miniprogram/pages/dataStatis/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    detail: "本实验室名为XXXX，隶属于XXXX。",
-    loss: "wwwwwwww",
-    ttype: "wwwwwwwww",
+    list:["1","2","3"]
   },
 
   /**
