@@ -1,45 +1,51 @@
-.navPic{
-  width: 100vw;
-  height: 20vh;
-}
 .firstview{
-  display:flex;
-  flex-wrap: wrap;
+  font-size: 40rpx;
 }
 .secview{
   display:flex;
-  flex-direction:row;
-  height: 200rpx;
-  flex: 0 0 50%;
+  height: 6vh;
+  width: 100vw;
+  margin-top: 2vh;
 }
-
-
-.container3{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 20vh;
-  position:fixed;
-  bottom:0; 
-  width: 100%; 
-}
-
-.btn1 {
-  color: white;
-  background:#1E90FF;
-  width: 100%;
-  border-radius: 0px;
-}
-
-.btn2 {
-  color: white;
-  background:#1E90FF;
-  width: 100%;  
-  border-radius: 0px;
-}
-
 .secview text{
-  margin-left: 5vh;
+  width: 22vw;
+  height: 5vh;
+  padding-left: 8vw; 
+}
+.secview switch{
+  width: 33vw;
+  height: 5vh;
+}
+secview2{
+  width: 45vw;
+  height: 5vh;
+}
+.secview2 button{
+  width: 30vw;
+  height: 5vh;
+  background: #00caca;
+  padding: 0;
+  font-size: 25rpx; 
+  text-align: center;
+  color: #ffffff;
+  order:1px solid #ffffff;
+  border-radius: 1.5vw;
+}
+.addEquip{
+  width: 100vw;
+  height:10vh;
+  font-size: 30rpx;
+  position:fixed; 
+  bottom:0;
+}
+.addEquip button{
+  background: #00caca;
+  color: #ffffff;
+  width: 60vw;
+  height: 7vh;
+  text-align: center;
+  border-radius: 1.5vw;
+  vertical-align: middle;
 }
 
 

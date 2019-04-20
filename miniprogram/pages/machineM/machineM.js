@@ -4,7 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    equip: ["设备1", "设备2", "设备3", "设备4", "设备5", "设备6", "设备7", "设备8", "设备9", "设备10"],
+    list:["0","1","2","3","4","5","6","7","8","9"]
   },
 
   /**
@@ -65,18 +66,12 @@ Page({
   bindView1:function(){
     wx.navigateTo({
       url: '/pages/machineM/addmachine/addmachine',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
     })
   },
 
   bindView2:function(){
     wx.navigateTo({
-      url: '/pages/machineM/updatemachine/updatemachine',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      url: '/pages/machineM/updatemachine/update/update',
     })
   }
 })

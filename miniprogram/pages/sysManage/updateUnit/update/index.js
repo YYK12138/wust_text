@@ -1,5 +1,6 @@
 // miniprogram/pages/sysManage/updateUnit/update/index.js
 const db = wx.cloud.database()
+var data
 Page({
 
   /**
@@ -21,7 +22,7 @@ Page({
     })
       .get({
         success(res) {
-          console.log(res.data)
+          data=res.data
           that.setData({
             unit1:res.data[0].Tname,
             unit2: res.data[1].Tname,

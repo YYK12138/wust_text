@@ -21,7 +21,6 @@ Page({
       password:"123"
     }).get({
       success(res) {
-        console.log(res.data)
       }
     })
   },
@@ -105,6 +104,7 @@ Page({
             })
           }
           else {
+            app.permissions = res.data[0].permissions
             app.load = username
             app.password = password
             wx.showToast({

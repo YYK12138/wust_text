@@ -9,11 +9,11 @@
     <text>实验室位置：</text>
   </view>
   <view class='container2'>
-    <input name='tname'></input>
-    <input name='aname'></input>
-    <input name='aid'></input>
-    <input name='aphone'></input>
-    <input name='position'></input>
+    <input name='tname' value='{{text[0]}}'></input>
+    <input name='aname' value='{{text[1]}}'></input>
+    <input name='aid' value='{{text[2]}}'></input>
+    <input name='aphone' value='{{text[3]}}'></input>
+    <input name='position' value='{{text[4]}}'></input>
   </view>
 </view>
 <view class='container3'>

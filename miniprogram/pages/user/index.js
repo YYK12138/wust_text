@@ -95,6 +95,7 @@ Page({
             if(res.confirm){
               app.load = "登录/注册"
               app.password = ""
+              app.permissions="0"
               wx.reLaunch({
                 url: '/pages/user/index'
               })

@@ -6,15 +6,33 @@ Page({
    * 页面的初始数据
    */
   data: {
-    TID:"0"
+    TID:"0",
+    text:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this
+    var text1=[]
     this.setData({
       TID:options.id
+    })
+    db.collection('testUnit').where({
+      TID: this.data.TID
+    })
+    .get({
+      success(res) {
+        text1.push(res.data[0].Tname)
+        text1.push(res.data[0].Aname)
+        text1.push(res.data[0].AID)
+        text1.push(res.data[0].Aphone)
+        text1.push(res.data[0].Position)
+        that.setData({
+          text:text1
+        })
+      }
     })
   },
 
@@ -22,7 +40,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+ 
   },
 
   /**
@@ -68,11 +86,6 @@ Page({
   },
 
   updateUnit:function(e){
-t
-
-  },
-
-  updateUnit:function(e){
     var tName=e.detail.value.tname
     var aNmae = e.detail.value.aname
     var aID = e.detail.value.aid
@@ -97,7 +110,7 @@ t
                 Position:position
               },
               success(res) {
-                console.log(res.data)
+                console.log("成功")
               }
             })
           }

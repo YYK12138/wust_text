@@ -4,7 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    list:["0","1","2","3","4","5","6"],
+    name: ["设备名称", "负责人姓名", "负责人手机", "基本信息", "设备参数1", "设备参数2", "设备参数3"]
   },
 
   /**
@@ -61,5 +62,24 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  bindView1: function () {
+    wx.showModal({
+      title: '提示',
+      content: '请联系系统管理员（TEL:123456789）确定操作!',
+    })
+  },
+  bindView2: function () {
+    wx.showModal({
+      title: '提示',
+      content: '确认提交',
+      success(res) {
+        if (res.confirm) {
+          wx.navigateBack({
+            url: '/pages/machineM/machineM'
+          })
+        }
+      }
+    })
   }
 })

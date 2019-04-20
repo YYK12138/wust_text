@@ -1,41 +1,11 @@
-<view class='container'>
+<view wx:for='{{list}}' class='container'>
   <view class='container2'>
-    <text>设备名称：</text>
-    <text>负责人姓名：</text>
-    <text>负责人手机号：</text>
-    <text>基本信息：</text>
-    <text>参数1：</text>
-    <text>参数2：</text>
-    <text>参数3：</text>
-    <text>参数4：</text>
-    <text>参数5：</text>
-    <text>参数6：</text>
-    <text>参数7：</text>
-    <text>参数8：</text>
-    <text>参数9：</text>
-    <text>参数10：</text>
+    <text>{{name[item]}}:</text>
   </view>
   <view class='container2'>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
+    <input value='{{text[item]}}'></input>
   </view>
 </view>
-<text><!-- 为了弥补flexed的按钮遮挡的暂行笨办法 -->
-1
-1
-</text>
 
 
 

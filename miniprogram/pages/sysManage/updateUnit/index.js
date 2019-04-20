@@ -21,7 +21,6 @@ Page({
     })
       .get({
         success(res) {
-          console.log(res.data)
           that.setData({
             unit1: res.data[0].Tname,
             unit2: res.data[1].Tname,

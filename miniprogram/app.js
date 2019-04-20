@@ -2,6 +2,7 @@
 App({
   load:"登录/注册",
   password:"",
+  permissions:"0",
   onLaunch: function () {
     
     if (!wx.cloud) {

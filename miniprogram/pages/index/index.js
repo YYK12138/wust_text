@@ -83,9 +83,18 @@ Page({
         icon:'none'
       })
     }else{
-      wx.navigateTo({
-        url: '/pages/sysManage/updateUnit/index',
-      })
+      if (app.permissions=="1")
+         wx.navigateTo({
+          url: '/pages/sysManage/updateUnit/index',
+       })
+      if (app.permissions=="2"){
+
+      }
+      if (app.permissions=="3"){
+        wx.navigateTo({
+          url: '/pages/machineM/machineM',
+        })  
+      }
     } 
   },
   
