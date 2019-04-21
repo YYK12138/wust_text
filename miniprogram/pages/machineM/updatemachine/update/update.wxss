@@ -1,3 +1,7 @@
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
 .container{
   display: flex;
   flex-direction: row;
@@ -9,6 +13,7 @@
   flex-direction: column;
   margin-top: 2vh;
   width: 50vw;
+  font-size: 30rpx;
 }
 .container2 text{
   margin-top: 4.5vh;
@@ -31,15 +36,15 @@
 }
 
 .btn1 {
-  color: white;
-  background:#1E90FF;
-  width: 100%;
-  border-radius: 0px;
+   background: #00caca;
+  color: #ffffff;
+  width: 50vw;
+  text-align: center;
 }
 
 .btn2 {
-  color: white;
-  background:#1E90FF;
-  width: 100%;  
-  border-radius: 0px;
+   background: #00caca;
+  color: #ffffff;
+  width: 50vw;
+  text-align: center;
 }

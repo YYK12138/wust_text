@@ -1,6 +1,5 @@
 {
   "pages": [
-
     "pages/index/index",
     "pages/sysManage/updateUnit/update/selectUpdate/index",
     "pages/sysManage/updateUnit/update/index",
@@ -18,7 +17,9 @@
     "pages/fiManage/RAForm/RAForm",
     "pages/reserveMgt/index",
     "pages/dataStatis/index",
-    "pages/overview/test1"
+    "pages/overview/test1",
+    "pages/unitManage/index",
+    "pages/unitManage/addManager/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

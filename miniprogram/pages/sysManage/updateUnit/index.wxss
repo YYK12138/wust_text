@@ -14,9 +14,13 @@
 }
 .container2 text{
   margin-top: 5vh;
+  height:4.5vh;
+  text-align: center;
+  font-size: 35rpx;
 }
 .container2 switch{
   margin-top: 4vh;
+  height:5vh;
 }
 .container3{
   display: flex;

@@ -88,7 +88,9 @@ Page({
           url: '/pages/sysManage/updateUnit/index',
        })
       if (app.permissions=="2"){
-
+        wx.navigateTo({
+          url: '/pages/unitManage/index',
+        })
       }
       if (app.permissions=="3"){
         wx.navigateTo({

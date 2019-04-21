@@ -1,3 +1,4 @@
+<image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
 <view wx:for='{{list}}' class='container'>
   <view class='container2'>
     <text>{{name[item]}}:</text>

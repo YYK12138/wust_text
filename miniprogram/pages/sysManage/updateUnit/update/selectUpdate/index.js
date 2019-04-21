@@ -101,18 +101,34 @@ Page({
       })
         .get({
           success(res) {
-            db.collection('testUnit').doc(res.data[0]._id).update({
-              data: {
-                Tname:tName,
-                Aname:aName,
-                AID:aID,
-                Aphone:aPhone,
-                Position:position
-              },
-              success(res) {
-                console.log("成功")
-              }
-            })
+          var res1=res
+           wx.showModal({
+             title: '提示',
+             content: '确认提交更改?',
+             success(res){
+               console.log("提交修改!")
+               if (res.confirm) {
+                 db.collection('testUnit').doc(res1.data[0]._id).update({
+                   data: {
+                     Tname: tName,
+                     Aname: aNmae,
+                     AID: aID,
+                     Aphone: aPhone,
+                     Position: position
+                   },
+                   success(res) {
+                     console.log("成功")
+                     wx.showToast({
+                       title: '操作成功!',
+                     })
+                     wx.navigateBack({
+                       delta: 1
+                     })
+                   }
+                 })
+               }
+             }
+           })
           }
         })
     }

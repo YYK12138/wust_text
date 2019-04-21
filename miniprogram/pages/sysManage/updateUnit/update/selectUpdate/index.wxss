@@ -1,4 +1,8 @@
 /* miniprogram/pages/sysManage/updateUnit/add/index.wxss */
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
 .container{
   display: flex;
   flex-direction: row;

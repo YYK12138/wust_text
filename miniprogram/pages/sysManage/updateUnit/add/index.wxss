@@ -1,4 +1,8 @@
 /* miniprogram/pages/sysManage/updateUnit/add/index.wxss */
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
 .container{
   display: flex;
   flex-direction: row;
@@ -14,7 +18,7 @@
   margin-left: 3vw;
 }
 .container2 input{
-  border:1px solid #666666;
+  border-bottom:1px solid #666666;
   margin-top: 4vh;
   width: 45vw;
 }
