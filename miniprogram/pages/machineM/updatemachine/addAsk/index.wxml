@@ -1,0 +1,10 @@
+<!--miniprogram/pages/machineM/updatemachine/addAsk/index.wxml-->
+<image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
+<view class='view1'><text class='text'>实验名称:</text><input></input></view>
+<view class='view1'><text class='text'>费用:</text><input></input></view>
+<view class='view2' value='{{text}}'><textarea class='area' value='{{text}}'>
+</textarea></view>
+<view class='container3'>
+  <button class="btn1" bindtap='bind1'>重置</button>
+  <button class="btn2" bindtap='bind2'>提交</button>
+</view>

@@ -1,0 +1,51 @@
+/* miniprogram/pages/machineM/updatemachine/lookAsk/index.wxss */
+.navPic{
+  width: 100vw;
+  height: 20vh;
+}
+.text{
+  font-size: 35rpx;
+}
+.area{
+  font-size: 30rpx;
+  width: 80vw;
+  height: 50vh;
+  color: #333333;
+  border: 1px solid #333333;
+}
+.view1{
+  width: 100vw;
+  height: 10vh;
+  padding-top: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.view2{
+  width: 100vw;
+  height: 60vh;
+  padding-left: 10vw;
+}
+.container3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20vh;
+  position:fixed;
+  bottom:0; 
+  width: 100%;
+}
+
+.btn1 {
+   background: #00caca;
+  color: #ffffff;
+  width: 50vw;
+  text-align: center;
+}
+
+.btn2 {
+   background: #00caca;
+  color: #ffffff;
+  width: 50vw;
+  text-align: center;
+}

@@ -19,7 +19,10 @@
     "pages/dataStatis/index",
     "pages/overview/test1",
     "pages/unitManage/index",
-    "pages/unitManage/addManager/index"
+    "pages/unitManage/addManager/index",
+    "pages/machineM/updatemachine/askList/index",
+    "pages/machineM/updatemachine/lookAsk/index",
+    "pages/machineM/updatemachine/addAsk/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

@@ -1,7 +1,6 @@
 <image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
 <view wx:for='{{list}}' class='firstview'>
   <view class='secview'><text>{{equip[item]}}</text><switch checked ></switch>
-  <view class='secview2'><button bindtap='bindView2'>修改</button></view>
+  <view class='secview2'><button bindtap='bindView2'>详情</button></view>
   </view>
 </view>
-<view class='addEquip'><button bindtap='bindView1'>新增设备</button></view>

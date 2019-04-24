@@ -4,13 +4,10 @@
     <text>{{name[item]}}:</text>
   </view>
   <view class='container2'>
-    <input value='{{text[item]}}'></input>
+    <text>{{text[item]}}</text>
   </view>
 </view>
-
-
-
 <view class='container3'>
-  <view style='flex-grow:1'><button bindtap='bindView1' class="btn1">删除</button></view>
-  <view style='flex-grow:1'><button bindtap='bindView2' class="btn2">确定</button></view>
+  <view style='flex-grow:1'><button bindtap='bindView1' class="btn1">实验列表</button></view>
+  <view style='flex-grow:1'><button bindtap='bindView2' class="btn2">预约设置</button></view>
 </view>

@@ -1,0 +1,9 @@
+<!--miniprogram/pages/machineM/updatemachine/askList/index.wxml-->
+<image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
+<scroll-view scroll-y>
+  <view wx:for='{{list}}' class='view'>
+  <view class='view2' style='padding-top:2.5vh'><text>{{name[item]}}</text></view>
+  <view class='view2'><button bindtap='bind1' data-id='{{item}}'>查看</button></view>
+  </view>
+</scroll-view>
+<button class='button' bindtap='bind2'>添加实验</button>
