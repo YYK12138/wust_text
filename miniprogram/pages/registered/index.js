@@ -100,6 +100,12 @@ Page({
                 data: {
                   password: psd,
                   id: number,
+                  permissions:"0",
+                  num:"null",
+                  name:"null",
+                  identity:"null",
+                  phone:"null",
+                  professional:"null"
                 },
                 success(res) {
                   wx.showModal({

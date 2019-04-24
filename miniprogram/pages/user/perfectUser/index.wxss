@@ -4,7 +4,7 @@
   font-size: 30rpx;
   width: 100vw;
   height: 15vh;
-  padding-left: 20vw;
+  padding-left: 35vw; 
   margin-top: 5vh;
 }
 /* miniprogram/pages/registered/index.wxss */

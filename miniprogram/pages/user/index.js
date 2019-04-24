@@ -105,13 +105,27 @@ Page({
     }
   },
   perfectUser:function(){
-    wx.navigateTo({
-      url: '/pages/user/perfectUser/index',
-    })
+    if (app.load == "登录/注册") {
+      wx.showModal({
+        title: '提示',
+        content: '请先登录账户！',
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/user/perfectUser/index',
+      })
+    }
   },
   feedBack:function(){
-    wx.navigateTo({
-      url: '/pages/user/feedBack/index',
-    })
+    if (app.load == "登录/注册") {
+      wx.showModal({
+        title: '提示',
+        content: '请先登录账户！',
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/user/feedBack/index',
+      })
+    }
   }
 })

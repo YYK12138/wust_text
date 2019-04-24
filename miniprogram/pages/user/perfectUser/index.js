@@ -1,4 +1,9 @@
 // miniprogram/pages/user/perfectUser/index.js
+const db = wx.cloud.database()
+var app = getApp()
+var value=0
+var column=0
+var identy="学生"
 Page({
 
   /**
@@ -8,16 +13,62 @@ Page({
     multiArray: [['管理学院', '材冶学院','计算机学院','医学院','信息学院'], ['信息管理与信息系统', '电子商务管理', '工程管理', '工商管理', '营销管理']],
     multiIndex: [0, 0],
     items: [
-      { name: 'USA', value: '老师' },
-      { name: 'CHN', value: '学生', checked: 'true' },
-    ]
+      { name: 'teacher', value: '老师'},
+      { name: 'student', value: '学生', checked: 'true' },
+    ],
+    num:"",
+    name:"",
+    phone:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that=this
+    db.collection('user').where({
+      id: app.load
+    })
+      .get({
+        success(res) {
+          console.log(res.data[0].column)
+          if (res.data[0].num!="null")
+          that.setData({
+            num: res.data[0].num,
+            name: res.data[0].name,
+            phone: res.data[0].phone,
+            multiIndex: [res.data[0].column, res.data[0].value]
+          })
+          if (res.data[0].identity=="teacher"){
+            that.setData({
+              items: [
+                { name: 'teacher', value: '老师', checked: 'true' },
+                { name: 'student', value: '学生' },
+              ]
+            })
+          }
+          if (res.data[0].column == "1") {
+            that.setData({
+              multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['材料工程', '化学工程', '工业冶金']]
+            })
+          } 
+          if (res.data[0].column=="2"){
+            that.setData({
+              multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['计算机科学与技术', '软件工程', '信息安全']]
+            })
+          }
+          if (res.data[0].column == "3") {
+            that.setData({
+              multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['护理学', '临床医学', '中医学']]
+            })
+          } 
+          if (res.data[0].column == "4") {
+            that.setData({
+              multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['信息工程', '电子信息', '网络信息技术']]
+            })
+          }  
+        }
+      })
   },
 
   /**
@@ -75,7 +126,6 @@ Page({
   },
   bindMultiPickerColumnChange:function(e){
     console.log('picker发送选择改变，携带值为', e.detail)
-    console.log('picker发送选择改变，携带值为', e.detail.column)
     if(e.detail.column==0){
       switch(e.detail.value){
         case 0: this.setData({
@@ -99,7 +149,7 @@ Page({
         })
           break
         case 4: this.setData({
-          multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['信息工程', '电子信息', '网路信息技术']],
+          multiArray: [['管理学院', '材冶学院', '计算机学院', '医学院', '信息学院'], ['信息工程', '电子信息', '网络信息技术']],
           multiIndex: [4, 0]
         })
           break
@@ -107,17 +157,42 @@ Page({
     }
   },
   radioChange:function(e){
-
+    identy=e.detail.value
   },
   authentication:function(e){
+    var that=this
+    column = [this.data.multiIndex[0]]
+    value = [this.data.multiIndex[1]]
+    var profession = this.data.multiArray[0][column] + "-" + this.data.multiArray[1][value]
     if (e.detail.value.num.length == 0 || e.detail.value.name.length == 0 || e.detail.value.phone.length == 0){
       wx.showModal({
         title: '提示',
         content: '以上内容不能为空！',
       })
     }else{
+      db.collection('user').where({
+        id:app.load
+      })
+        .get({
+          success(res) {
+            db.collection('user').doc(res.data[0]._id).update({
+              data: {
+                num: e.detail.value.num,
+                name: e.detail.value.name,
+                identity:identy,
+                phone: e.detail.value.phone,
+                professional:profession,
+                column:column,
+                value:value
+              },
+              success(res) {
+                console.log("成功")
+              }
+            })
+          }
+        })
       wx.showToast({
-        title: '您的申请已提交管理员审核！',
+        title: '成功绑定!',
         duration: 2000
       })
       wx.reLaunch({
