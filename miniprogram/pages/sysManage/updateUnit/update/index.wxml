@@ -1,8 +1,0 @@
-<!--miniprogram/pages/sysManage/updateUnit/update/index.wxml-->
-<image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
-<view class='container2'><text>{{unit1}}</text><button  bindtap='bindView1' data-id='1'>修改</button></view>
-<view class='container2'><text>{{unit2}}</text><button  bindtap='bindView1' data-id='2'>修改</button></view>
-<view class='container2'><text>{{unit3}}</text><button  bindtap='bindView1' data-id='3'>修改</button></view>
-<button class='boombtn' bindtap='bindView2'>取消修改</button>
-
-

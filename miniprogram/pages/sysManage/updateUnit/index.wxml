@@ -1,23 +1,17 @@
 <image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
-<view class='container'>
-  <text>测试单位</text>
-  <text>开启/暂停</text>
-</view>
-<view class='container'>
-  <view class='container2'>
-    <text>{{unit1}}</text>
-    <text>{{unit2}}</text>
-    <text>{{unit3}}</text>
+<view wx:for='{{list}}' class='container'>
+  <view class='container2' style='width:30vw'>
+    <text>{{unit[item]}}</text>
   </view>
   <view class='container2'>
     <switch checked='true'></switch>
-    <switch checked='true'></switch>
-    <switch checked='true'></switch>
+  </view>
+  <view class='container2'>
+    <button bindtap='bindView3' data-id='{{items[item]}}'>修改</button>
   </view>
 </view>
 <view class='container3'>
   <button bindtap='bindView1'>添加测试单位</button>
-  <button bindtap='bindView2'>修改测试单位</button>
 </view>
 
 

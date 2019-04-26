@@ -18,7 +18,7 @@
   </view>
 </view>
 <view class='container3'>
-  <button>删除</button>
+  <button bindtap='deleteUnit'>删除</button>
   <button form-type='submit'>确定</button>
 </view>
 </form>

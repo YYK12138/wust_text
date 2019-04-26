@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/sysManage/updateUnit/update/selectUpdate/index",
-    "pages/sysManage/updateUnit/update/index",
     "pages/sysManage/updateUnit/add/index",
     "pages/sysManage/updateUnit/index",
     "pages/login/index",

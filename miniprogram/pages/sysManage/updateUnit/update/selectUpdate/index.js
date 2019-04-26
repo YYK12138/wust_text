@@ -1,5 +1,6 @@
 // miniprogram/pages/sysManage/updateUnit/update/selectUpdate/index.js
 const db = wx.cloud.database()
+var _id1
 Page({
 
   /**
@@ -24,6 +25,7 @@ Page({
     })
     .get({
       success(res) {
+        _id1 = res.data[0]._id
         text1.push(res.data[0].Tname)
         text1.push(res.data[0].Aname)
         text1.push(res.data[0].AID)
@@ -86,6 +88,7 @@ Page({
   },
 
   updateUnit:function(e){
+    var tName1
     var tName=e.detail.value.tname
     var aNmae = e.detail.value.aname
     var aID = e.detail.value.aid
@@ -95,43 +98,80 @@ Page({
       wx.showToast({
         title: '以上内容不能为空',
       })
-    }else{
+    } else {
       db.collection('testUnit').where({
         TID:this.data.TID
       })
         .get({
           success(res) {
+          tName1=res.data[0].Tname
           var res1=res
            wx.showModal({
              title: '提示',
              content: '确认提交更改?',
              success(res){
-               console.log("提交修改!")
                if (res.confirm) {
-                 db.collection('testUnit').doc(res1.data[0]._id).update({
-                   data: {
-                     Tname: tName,
-                     Aname: aNmae,
-                     AID: aID,
-                     Aphone: aPhone,
-                     Position: position
-                   },
-                   success(res) {
-                     console.log("成功")
-                     wx.showToast({
-                       title: '操作成功!',
-                     })
-                     wx.navigateBack({
-                       delta: 1
-                     })
-                   }
+                 db.collection('testUnit').where({
+                   Tname: tName
                  })
+                  .get({
+                   success(res) {
+                    if(res.data.length==0||tName==tName1){
+                      db.collection('testUnit').doc(res1.data[0]._id).update({
+                        data: {
+                          Tname: tName,
+                          Aname: aNmae,
+                          AID: aID,
+                          Aphone: aPhone,
+                          Position: position
+                        },
+                        success(res) {
+                          wx.showToast({
+                            title: '操作成功!',
+                          })
+                          wx.navigateBack({
+                            delta: 1
+                          })
+                        }
+                      })
+                    }
+                    else{
+                      wx.showModal({
+                        title: '提示',
+                        content: '已存在相同名称的测试单位!',
+                      })
+                    }
+                   }
+                  })
+                
                }
              }
            })
           }
         })
     }
+  },
 
+  deleteUnit:function(e){
+    wx.showModal({
+      title: '提示',
+      content: '是否删除该测试单位？',
+      success(res){
+        if(res.confirm){
+          db.collection('testUnit').doc(_id1).remove({
+            success(res) {
+              wx.showToast({
+                title: '已成功删除该测试单位!',
+                duration:2000
+              })
+              wx.navigateBack({
+                url: '/pages/sysManage/updateUnit/index',
+              })
+            }
+          })
+        }
+      }
+    })
   }
+
 })

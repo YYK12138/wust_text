@@ -1,6 +1,6 @@
 <!--miniprogram/pages/sysManage/updateUnit/add/index.wxml-->
 <image class='navPic' src='http://ecpkn.buaa.edu.cn/__local/3/F8/94/E8C0995863FCB8307EF426F3DE1_E432807E_15992.jpg'></image>
-<form>
+<form bindsubmit='sunmit'>
 <view class='container'>
   <view class='container2'>
     <text>单位名称：</text>
@@ -10,15 +10,15 @@
     <text>实验室位置：</text>
   </view>
   <view class='container2'>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
-    <input></input>
+    <input placeholder='请输入单位名称' name='tname'></input>
+    <input placeholder='请输入负责人姓名' name='aname'></input>
+    <input placeholder='请输入负责人卡号' name='aid'></input>
+    <input placeholder='请输入负责人手机号' name='aphone'></input>
+    <input placeholder='请输入实验室位置' name='position'></input>
   </view>
 </view>
 <view class='container3'>
-  <button>重置</button>
-  <button>提交</button>
+  <button bindtap='returnPage'>取消</button>
+  <button form-type='submit'>提交</button>
 </view>
 </form>
